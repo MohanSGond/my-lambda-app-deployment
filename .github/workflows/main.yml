@@ -19,9 +19,6 @@ jobs:
       with:
         node-version: 18
 
-    - name: Install dependencies
-      run: npm ci
-
     - name: Deploy
       run: npx serverless deploy
       env:
